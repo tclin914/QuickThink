@@ -1,0 +1,32 @@
+set height 0
+b 15
+run < INPUT
+set $i=0
+set $size=4000
+
+while ($i<$size)
+		p level
+		p tmp
+		set tmp=50
+		
+		if ($i>996)
+			set tmp=100
+		end
+		if ($i>2000)
+			set tmp=700
+		end
+		if ($i>3000)
+			set tmp=800
+		end
+		set $i=$i+1
+		
+		p $i
+		c
+end
+	    
+	
+
+
+
+
+

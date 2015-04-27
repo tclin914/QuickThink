@@ -1,0 +1,33 @@
+set height 0
+b 15
+run < INPUT 
+
+set $total = 4000
+set $i = 0
+
+while($i < $total)
+    
+    p tmp
+
+    set tmp = 50
+    if($i > 1000)
+        set tmp = 100
+    end
+
+    if($i > 2000)
+        set tmp = 400
+    end
+
+    if($i > 3000)
+        set tmp = 1500
+    end
+    
+    print tmp 
+    c
+    
+    set $i = $i + 1
+    
+    print $i
+end
+
+
